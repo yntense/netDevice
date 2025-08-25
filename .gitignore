@@ -1,0 +1,50 @@
+# Mesh Network Driver - Git Ignore File
+
+# 编译输出目录
+build/
+*.ko
+*.o
+*.mod
+*.mod.c
+*.mod.o
+modules.order
+Module.symvers
+.*.cmd
+
+# 内核模块相关
+*.ko.cmd
+*.o.cmd
+*.mod.cmd
+*.mod.o.cmd
+
+# 临时文件
+*.tmp
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器文件
+.vscode/
+.idea/
+*.sublime-*
+
+# 日志文件
+*.log
+
+# 备份文件
+*.bak
+*.backup
+
+# 测试输出
+test_mesh_net
+*.test
+
+# 安装相关
+*.deb
+*.rpm
+*.tar.gz
+*.zip

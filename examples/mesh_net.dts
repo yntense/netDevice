@@ -1,0 +1,23 @@
+/dts-v1/;
+
+/ {
+    compatible = "mesh,network";
+    
+    mesh_net: mesh-network@40000000 {
+        compatible = "mesh,network";
+        reg = <0x40000000 0x1000>;
+        interrupts = <0 32 4>;
+        reset-gpios = <&gpio0 12 0>;
+        irq-gpios = <&gpio0 13 0>;
+        
+        // 915MHz频率配置
+        frequency = <915000000>;
+        data-rate = <700000>;
+        tx-power = <20>;
+        rx-gain = <30>;
+        
+        status = "okay";
+    };
+};
+
+
